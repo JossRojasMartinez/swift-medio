@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoplayout5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-FL-3EX">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="4zT-z0-eqj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4zT-z0-eqj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4zT-z0-eqj"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYo-8Q-UaL">
+                                <rect key="frame" x="341" y="0.0" width="326" height="335"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PSD T-shirt MockUP Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3X-F3-etA">
+                                        <rect key="frame" x="15" y="15" width="304" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.5" id="dSH-g3-8vv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="dSH-g3-8vv"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="dSH-g3-8vv"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pXw-Ok-e7j">
+                                        <rect key="frame" x="15" y="138" width="296" height="172"/>
+                                        <string key="text">Thisi is a free psd T-shirt mockup provided by pixiden.com. The PSD comes with a plain simle tee shirt mockup template. You can edit the t-shirt color and use the smart layer to apply your design. The high-resolution makes it easy to frame specific details with close-ups.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="pXw-Ok-e7j" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="5iO-FP-QzN"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXw-Ok-e7j" secondAttribute="trailing" constant="15" id="7YV-vu-xlB"/>
+                                    <constraint firstItem="pXw-Ok-e7j" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="BKV-ei-HxK"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="top" secondItem="IYo-8Q-UaL" secondAttribute="top" constant="15" id="CnC-0O-tHe"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXw-Ok-e7j" secondAttribute="trailing" constant="15" id="Dpa-RL-lLV"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="IKs-c6-c0c"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pXw-Ok-e7j" secondAttribute="bottom" constant="15" id="ITu-r2-swS"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXw-Ok-e7j" secondAttribute="trailing" constant="15" id="Nlg-wa-9gr"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="Q4y-aY-zJX"/>
+                                    <constraint firstAttribute="trailing" secondItem="A3X-F3-etA" secondAttribute="trailing" constant="15" id="U7I-64-hXc"/>
+                                    <constraint firstItem="pXw-Ok-e7j" firstAttribute="top" secondItem="A3X-F3-etA" secondAttribute="bottom" constant="60" id="aQo-4q-aPY"/>
+                                    <constraint firstAttribute="trailing" secondItem="A3X-F3-etA" secondAttribute="trailing" constant="15" id="azD-ja-O5N"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="top" secondItem="IYo-8Q-UaL" secondAttribute="top" constant="15" id="had-ev-waC"/>
+                                    <constraint firstItem="pXw-Ok-e7j" firstAttribute="top" secondItem="A3X-F3-etA" secondAttribute="bottom" constant="8" id="nhK-pU-Dfx"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="top" secondItem="IYo-8Q-UaL" secondAttribute="top" constant="15" id="o8k-tG-pzh"/>
+                                    <constraint firstItem="A3X-F3-etA" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="rPd-aE-xPh"/>
+                                    <constraint firstItem="pXw-Ok-e7j" firstAttribute="leading" secondItem="IYo-8Q-UaL" secondAttribute="leading" constant="15" id="yjg-mf-bHk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CnC-0O-tHe"/>
+                                        <exclude reference="IKs-c6-c0c"/>
+                                        <exclude reference="Q4y-aY-zJX"/>
+                                        <exclude reference="U7I-64-hXc"/>
+                                        <exclude reference="azD-ja-O5N"/>
+                                        <exclude reference="had-ev-waC"/>
+                                        <exclude reference="o8k-tG-pzh"/>
+                                        <exclude reference="rPd-aE-xPh"/>
+                                        <exclude reference="5iO-FP-QzN"/>
+                                        <exclude reference="7YV-vu-xlB"/>
+                                        <exclude reference="BKV-ei-HxK"/>
+                                        <exclude reference="Dpa-RL-lLV"/>
+                                        <exclude reference="ITu-r2-swS"/>
+                                        <exclude reference="Nlg-wa-9gr"/>
+                                        <exclude reference="aQo-4q-aPY"/>
+                                        <exclude reference="nhK-pU-Dfx"/>
+                                        <exclude reference="yjg-mf-bHk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CnC-0O-tHe"/>
+                                        <include reference="IKs-c6-c0c"/>
+                                        <include reference="Q4y-aY-zJX"/>
+                                        <include reference="U7I-64-hXc"/>
+                                        <include reference="had-ev-waC"/>
+                                        <include reference="BKV-ei-HxK"/>
+                                        <include reference="Dpa-RL-lLV"/>
+                                        <include reference="Nlg-wa-9gr"/>
+                                        <include reference="aQo-4q-aPY"/>
+                                        <include reference="yjg-mf-bHk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="azD-ja-O5N"/>
+                                        <include reference="o8k-tG-pzh"/>
+                                        <include reference="rPd-aE-xPh"/>
+                                        <include reference="5iO-FP-QzN"/>
+                                        <include reference="7YV-vu-xlB"/>
+                                        <include reference="ITu-r2-swS"/>
+                                        <include reference="nhK-pU-Dfx"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Hs-rr-2iH"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5aH-M9-9f6"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Vx-s4-BgX"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="leading" secondItem="ejp-FL-3EX" secondAttribute="trailing" constant="8" symbolic="YES" id="BKO-Nd-PLB"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="top" secondItem="ejp-FL-3EX" secondAttribute="bottom" id="JHt-gD-YMK"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RHx-Jc-wgd"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S4m-xX-OVG"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UEL-6r-Qiq"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Voy-Y8-9wu"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YL8-Ze-ZVs"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hn5-jd-Bdg"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jEu-A4-hU2"/>
+                            <constraint firstItem="IYo-8Q-UaL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qbK-fx-rik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IYo-8Q-UaL" secondAttribute="bottom" constant="40" id="qfk-dE-pxF"/>
+                            <constraint firstItem="ejp-FL-3EX" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.585" id="whl-Pd-l9L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qfk-dE-pxF"/>
+                                <exclude reference="5Hs-rr-2iH"/>
+                                <exclude reference="5aH-M9-9f6"/>
+                                <exclude reference="RHx-Jc-wgd"/>
+                                <exclude reference="Voy-Y8-9wu"/>
+                                <exclude reference="YL8-Ze-ZVs"/>
+                                <exclude reference="jEu-A4-hU2"/>
+                                <exclude reference="whl-Pd-l9L"/>
+                                <exclude reference="7Vx-s4-BgX"/>
+                                <exclude reference="BKO-Nd-PLB"/>
+                                <exclude reference="JHt-gD-YMK"/>
+                                <exclude reference="S4m-xX-OVG"/>
+                                <exclude reference="UEL-6r-Qiq"/>
+                                <exclude reference="hn5-jd-Bdg"/>
+                                <exclude reference="qbK-fx-rik"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="qfk-dE-pxF"/>
+                                <include reference="Voy-Y8-9wu"/>
+                                <include reference="YL8-Ze-ZVs"/>
+                                <include reference="jEu-A4-hU2"/>
+                                <include reference="7Vx-s4-BgX"/>
+                                <include reference="BKO-Nd-PLB"/>
+                                <include reference="hn5-jd-Bdg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="5Hs-rr-2iH"/>
+                                <include reference="5aH-M9-9f6"/>
+                                <include reference="RHx-Jc-wgd"/>
+                                <include reference="whl-Pd-l9L"/>
+                                <include reference="JHt-gD-YMK"/>
+                                <include reference="S4m-xX-OVG"/>
+                                <include reference="UEL-6r-Qiq"/>
+                                <include reference="qbK-fx-rik"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.98050974512745" y="114.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tshirt" width="800" height="676"/>
+    </resources>
+</document>
