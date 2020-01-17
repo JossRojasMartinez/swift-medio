@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDemoAutoplayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="PoX-hv-IJ5">
+                                <rect key="frame" x="-4" y="33" width="423" height="676"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-pT-P28">
+                                <rect key="frame" x="0.0" y="482" width="414" height="399"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PSD-T-Shirt MockUP template" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-cy-Ee4">
+                                        <rect key="frame" x="15" y="15" width="384" height="35"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The most beutiful and chick for the temporate of de winter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdN-gr-1Al">
+                                        <rect key="frame" x="15" y="85" width="384" height="182"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OdN-gr-1Al" secondAttribute="bottom" constant="15" id="0ub-OD-qMe"/>
+                                    <constraint firstItem="mmL-cy-Ee4" firstAttribute="top" secondItem="Fe9-pT-P28" secondAttribute="top" constant="15" id="Oa3-WZ-7Ci"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmL-cy-Ee4" secondAttribute="trailing" constant="15" id="UbD-DA-XJo"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmL-cy-Ee4" secondAttribute="trailing" constant="1" id="VFi-Jt-utr"/>
+                                    <constraint firstItem="OdN-gr-1Al" firstAttribute="top" secondItem="mmL-cy-Ee4" secondAttribute="bottom" constant="8" id="aN7-bS-UmI"/>
+                                    <constraint firstItem="mmL-cy-Ee4" firstAttribute="top" secondItem="Fe9-pT-P28" secondAttribute="top" constant="20" symbolic="YES" id="lwC-2l-Q1q"/>
+                                    <constraint firstItem="mmL-cy-Ee4" firstAttribute="leading" secondItem="Fe9-pT-P28" secondAttribute="leading" constant="15" id="m1E-xE-JWw"/>
+                                    <constraint firstItem="mmL-cy-Ee4" firstAttribute="leading" secondItem="Fe9-pT-P28" secondAttribute="leading" constant="15" id="oWt-3H-aqE"/>
+                                    <constraint firstItem="OdN-gr-1Al" firstAttribute="leading" secondItem="Fe9-pT-P28" secondAttribute="leading" constant="15" id="pq3-YS-Qrh"/>
+                                    <constraint firstAttribute="trailing" secondItem="OdN-gr-1Al" secondAttribute="trailing" constant="15" id="ulu-xb-Ato"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VFi-Jt-utr"/>
+                                        <exclude reference="lwC-2l-Q1q"/>
+                                        <exclude reference="oWt-3H-aqE"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Fe9-pT-P28" secondAttribute="bottom" constant="15" id="4Oh-rT-Xhn"/>
+                            <constraint firstItem="Fe9-pT-P28" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JEY-9P-Ma5"/>
+                            <constraint firstItem="Fe9-pT-P28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdk-bg-iR1"/>
+                            <constraint firstItem="Fe9-pT-P28" firstAttribute="top" secondItem="PoX-hv-IJ5" secondAttribute="bottom" constant="-304" id="j6m-iy-HAU"/>
+                            <constraint firstItem="Fe9-pT-P28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="438" id="xtq-kA-EG6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tshirt" width="800" height="676"/>
+    </resources>
+</document>
